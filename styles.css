@@ -1,0 +1,7 @@
+/* background gradient */
+body 
+{
+    height: 700px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(113, 112, 112), black 40%, grey);
+}
