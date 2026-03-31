@@ -2,6 +2,130 @@
 body 
 {
     height: 700px;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(113, 112, 112), black 40%, grey);
+    background-color: rgb(113, 112, 112); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(113, 112, 112), black 40%,rgb(113, 112, 112));
+}
+.header-ish
+{
+    display: flex;
+
+}
+.image-container
+{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+
+}
+
+.socials
+{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 5px;
+}
+.discord-link
+{
+    width: 50px;
+    height: auto;
+}
+.header
+{
+    align-items: center;
+    display: flex;
+    size: 20px;
+}
+
+.circle-header
+{
+    display: left;
+    padding-left: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+}
+.welcome-header
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+
+.title-caos
+{
+    font-size: 30px;
+    color: white;
+    font-family: 'sans-serif', comic sans;
+    margin-bottom: 20px;
+}
+.description
+{
+    font-size: 25px;
+    color: white;
+    font-family: 'sans-serif', comic sans;
+    width: 100%;
+    text-align: center;
+}
+
+.ring {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #474747;
+    transition: 0.5s;
+}
+
+.ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.ring i
+
+:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+}
+
+.ring i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
