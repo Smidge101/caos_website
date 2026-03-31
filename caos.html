@@ -5,11 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Caos</title>
     </head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="styles.css">
     <body>
         
         <div class="socials">
             <a href="https://discord.gg/j64Egpkx"><img class="discord-link" src="discord-white-icon.webp" alt="Discord Link"></a>
+        </div>
+
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </div>
 
         <!--<div id="three" class="header">
@@ -18,20 +26,23 @@
             <i id="ignore" style="--clr:#C43629;"></i>
             <img class="image-container" src="caosLogo.png" alt="Caos Logo">
         </div>-->
-
-        <div class="circle-header">
-            <div id="three" class="bio-txt ring center">
-                <i id="ignore" style="--clr:white;"></i>
-                <i id="ignore" style="--clr:black;"></i>
-                <i id="ignore" style="--clr:#C43629;"></i>
-                <img class="image-container" src="caosLogo.png" alt="Caos Logo"> 
+        <!-- I want this section on the left -->
+        <div class="header-ish">
+            <div class="circle-header">
+                <div id="three" class="bio-txt ring center">
+                    <i id="ignore" style="--clr:white;"></i>
+                    <i id="ignore" style="--clr:#C43629;"></i>
+                    <i style="--clr:black;"></i>
+                    <img class="image-container" src="caosLogo.png" alt="Caos Logo"> 
+                </div>
             </div>
-            <!--I want this section to be able to been seen as soon as the user pops up the website-->
-            <!--Maybe be do the scroll effect with the gradient effect??-->
             <div class="welcome-header">
-                <p class="title-caos">Hello Welcome to Caos!</p>
-
-                <p class="description">CAOS welcomes all students passionate about computer science and modern technologies. Our goal is to cultivate leaders proficient in technology, committed to driving positive societal change. Emphasizing interdisciplinary collaboration, we foster a community at SIUE where students can thrive academically, professionally, and personally. We also meet every Tuesday and Thursday at EB 1101</p>
+                <!--I want this section to be able to been seen as soon as the user pops up the website-->
+                <!--Maybe be do the scroll effect with the gradient effect??-->
+                <div class="welcome-header">
+                    <p class="title-caos">Hello, welcome to CAOS!</p>
+                    <p class="description">CAOS welcomes all students passionate about computer science and modern technologies. Our goal is to cultivate leaders proficient in technology, committed to driving positive societal change. Emphasizing interdisciplinary collaboration, we foster a community at SIUE where students can thrive academically, professionally, and personally. We also meet every Tuesday and Thursday at EB 1101</p>
+                </div>
             </div>
         </div>
 
