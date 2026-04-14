@@ -47,12 +47,19 @@ html, body {
 .ten span:nth-of-type(6) {
     animation-delay: 0.6s;
 }
-
+.ten span:nth-of-type(7) {
+    animation-delay: 0.8s;
+}
 /* Someone please center this image for me */
 .caosLogo
 {
-    width: 50px;
-    height: 50px;
+    width: 400px;
+    height: 200px;
+}
+.img_center
+{
+    display: flex;
+    justify-content: center;
 }
 
 .parallax {
@@ -60,7 +67,7 @@ html, body {
   background-image: url("needed.gif");
 
   /* Set a specific height */
-  min-height: 600px; 
+  min-height: 650px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -165,5 +172,66 @@ ul li a
 
 ul li a:hover 
 {
-    background-color: #111111;
+    background-color: #ff0000;
+}
+.ring {
+    position: relative;
+    /* width: 40%; */
+    width: 350px;
+    height: 350px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #474747;
+    transition: 0.5s;
+}
+
+.ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+}
+
+.ring i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.description
+{
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
 }
